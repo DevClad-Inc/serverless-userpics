@@ -84,7 +84,7 @@ func GetPic(w http.ResponseWriter, r *http.Request) {
 }
 
 func ImageList(client *s3.Client, bucketName string, accountId string) string {
-
+	publicId := os.Getenv("PUBLIC_ID")
 	// LIST OF IMAGES
 	// (https://developers.cloudflare.com/r2/data-access/s3-api/api/#implemented-object-level-operations/) has list of available operations
 
@@ -107,7 +107,6 @@ func ImageList(client *s3.Client, bucketName string, accountId string) string {
 	r := rand.New(goddamnSource)
 	randomNumber := r.Intn(len(s3Response.Contents))
 	randomImage := s3Response.Contents[randomNumber].Key
-
-	generatedURl := fmt.Sprintf("https://%s.r2.cloudflarestorage.com/%s", accountId, randomImage)
+	generatedURl := fmt.Sprintf("https://%s.r2.dev/%s", publicId, randomImage)
 	return generatedURl
 }

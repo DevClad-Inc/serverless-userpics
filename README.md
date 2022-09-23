@@ -1,12 +1,20 @@
-# Serverless USERPICS
+# Serverless Userpics
 
-someone spammed the fuckin repo. lol github is a mess.
+*update:someone spammed the repo. lol github is a mess.*
 
+## Usage (Important)
 
-![image](https://user-images.githubusercontent.com/41021374/191885183-988afc3c-d8eb-4d33-972f-f9c8169cc8d9.png)
+To get started quickly,
 
+1. Head over to [userpics.devclad.com](https://userpics.devclad.com) and "Get a random user pic".
+2. Use the URL in your app.
 
-**IMPORTANT: You need to setup your own Cloudflare and Cloudflare R2 Bucket. This is not a free avatar generator. at least not rn.**
+Alternatively (I recommend this),
+
+- make a `GET` request to `https://userpics.devclad.com/api/random`.
+- make a `GET` request to the URL in the response.
+- Stream the bytes to a new file in the desired format and save it to the bucket of your choice. (wherever you are storing your user pics)
+  - example: I use Django with S3 storage and they go in `media/avatars/`. I use the `uuid` of the user as the filename.
 
 Instantly get user avatars via an API call. Configurable af.
 I was using avatars.dicebear.com for a while, but I found some better avatars and decided to host my own serverless version of it.
@@ -59,7 +67,7 @@ do the usual. install dependencies via `yarn` and run `yarn run start`/`yarn run
 - [ ] Add more avatars
 - [X] Host
 - [ ] Modify `/` route.
-- [ ] Make the function URL public (?)
+- [X] Make the function URL public (?)
 
 #### YANKING
 
