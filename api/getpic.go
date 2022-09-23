@@ -6,7 +6,10 @@ import (
 	"fmt"
 	"log"
 	"math/rand"
+	"net/http"
 	"os"
+
+	// "path/filepath"
 	"sync"
 	"time"
 
@@ -15,7 +18,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/credentials"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
-	"github.com/joho/godotenv"
+	// "github.com/joho/godotenv"
 )
 
 type S3Response struct {
@@ -24,9 +27,16 @@ type S3Response struct {
 	} `json:"Contents"`
 }
 
-func main() {
-	err := godotenv.Load()
-	if err != nil { log.Fatal("Error loading .env file") }
+// uncomment some code to test locally
+
+// func main() {
+// 	GetPic()
+// }
+
+func GetPic(w http.ResponseWriter, r *http.Request) {
+	// err := godotenv.Load(filepath.Join("api/.env"))
+	// fmt.Println("Loading .env file", err)
+	// if err != nil { log.Fatal("Error loading .env file") }
 
 	// ENV INITIALIZATION
 	accountId := os.Getenv("ACCOUNT_ID")
@@ -65,7 +75,8 @@ func main() {
 	wg.Add(1)
 	go func() {
 		defer wg.Done()
-		ImageList(client, bucketName, accountId)
+		fmt.Fprintf(w, ImageList(client, bucketName, accountId))
+		// ImageList(client, bucketName, accountId)
 	}()
 
 	wg.Wait()

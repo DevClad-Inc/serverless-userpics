@@ -1,0 +1,18 @@
+{
+  "name": "serverless-userpics",
+  "version": "1.0.0",
+  "description": "Instantly get user avatars via an API call. Configurable af.",
+  "main": "index.js",
+  "repository": "git@github.com:arthtyagi/serverless-userpics.git",
+  "author": "Arth Tyagi <arthtyagi7@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "vercel": "^28.4.2"
+  },
+  "scripts": {
+    "setup": "yarn vercel login && yarn vercel link",
+    "start": "yarn vercel dev",
+    "dev": "yarn start"
+  }
+}

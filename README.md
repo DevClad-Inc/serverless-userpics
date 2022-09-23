@@ -1,4 +1,4 @@
-# serverless-userpics
+# Serverless USERPICS
 
 Instantly get user avatars via an API call. Configurable af.
 I was using avatars.dicebear.com for a while, but I found some better avatars and decided to host my own serverless version of it.
@@ -21,7 +21,19 @@ accessKeyId := os.Getenv("API_ACCESS_KEY")
 accessKeySecret := os.Getenv("API_SECRET_KEY")
 ```
 
-For environment variables, I’m using [godotenv](https://github.com/joho/godotenv) to load them from a .env file.
+### Replicate this
+
+1. Create an R2 bucket on Cloudflare.
+2. Generate S3 Token via `Manage R2 API Tokens` in R2 Dashboard.
+3. Set your environment variables.
+4. Deploy ⚡
+
+### Running locally
+
+do the usual. install dependencies via `yarn` and run `yarn run start`/`yarn run dev`.
+
+**Make sure to setup environment variables in your Vercel dashboard.**
+**Also make sure to have S3 API access and secret on the recieving end if your bucket is private like mine.**
 
 ### Services
 
@@ -36,5 +48,10 @@ For environment variables, I’m using [godotenv](https://github.com/joho/godote
 ### Todo
 
 - [ ] Add more avatars
-- [ ] Host lol
+- [X] Host
+- [ ] Modify `/` route.
 - [ ] Make the function URL public (?)
+
+#### YANKING
+
+Yanked the public/ and the vercel.json from [template-go-vercel](https://github.com/riccardogiorato/template-go-vercel).
