@@ -1,5 +1,9 @@
 # Serverless USERPICS
 
+![image](https://user-images.githubusercontent.com/41021374/191885183-988afc3c-d8eb-4d33-972f-f9c8169cc8d9.png)
+
+someone spammed the fuckin repo. lol github is a mess.
+
 **IMPORTANT: You need to setup your own Cloudflare and Cloudflare R2 Bucket. This is not a free avatar generator. at least not rn.**
 
 Instantly get user avatars via an API call. Configurable af.
