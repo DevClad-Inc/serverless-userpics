@@ -75,7 +75,7 @@ func GetPic(w http.ResponseWriter, r *http.Request) {
 	wg.Add(1)
 	go func() {
 		defer wg.Done()
-		fmt.Fprintf(w, ImageList(client, bucketName, accountId))
+		fmt.Println(w, ImageList(client, bucketName, accountId))
 		// ImageList(client, bucketName, accountId)
 	}()
 

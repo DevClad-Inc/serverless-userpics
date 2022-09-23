@@ -1,9 +1,12 @@
 # Serverless USERPICS
 
+**IMPORTANT: You need to setup your own Cloudflare and Cloudflare R2 Bucket. This is not a free avatar generator. at least not rn.**
+
 Instantly get user avatars via an API call. Configurable af.
 I was using avatars.dicebear.com for a while, but I found some better avatars and decided to host my own serverless version of it.
 
 Will be using this in production on [DevClad](https://devclad.com).
+Live at [userpics.devclad.com](https://userpics.devclad.com)
 
 ## Features
 
