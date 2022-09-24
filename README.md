@@ -1,7 +1,5 @@
 # Serverless Userpics
 
-*update:someone spammed the repo. lol github is a mess.*
-
 ## Usage (Important)
 
 To get started quickly,
@@ -21,6 +19,25 @@ I was using avatars.dicebear.com for a while, but I found some better avatars an
 
 Will be using this in production on [DevClad](https://devclad.com).
 Live at [userpics.devclad.com](https://userpics.devclad.com)
+
+## Python Example
+
+``` python
+def random_avatar():
+    name = str(uuid.uuid4())[:8]
+    with open(f"media/avatars/{name}.png", "wb+") as f:
+        url = requests.get("https://userpics.devclad.com/api/getpic")
+        response = requests.get(url.text, stream=True)
+        if not response.ok:
+            raise Exception("Could not get avatar")
+        for block in response.iter_content(1024):
+            if not block:
+                break
+            f.write(block)
+    return f"avatars/{name}.png"
+```
+
+You can try svg too btw, haven't tested it but it should work.
 
 ## Features
 
