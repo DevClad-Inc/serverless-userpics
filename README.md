@@ -17,6 +17,26 @@
 1. `api/getpic/`
 2. `api/avatar/` - `?stream=True` query outputs an SVG for you.
 
+#### Available Query Params
+
+- `?name=string` - Your username. Defaults to `Cactus Jack`.
+- `?size=int` - Size of the avatar. Default is 128.
+- `?variant=string` - Variant of the avatar. Default is `beam`.
+- `?stream=bool` - Stream the SVG instead of returning a URL. Default is False.
+
+#### Available Variants
+
+- `marble`
+- `pixel`
+- `beam`
+- `sunset`
+- `ring`
+- `bauhaus`
+
+All these variants and avatars (under `api/avatar/` route) are from [Boring Avatars](https://boringavatars.com/).
+
+![Route 2](https://imagedelivery.net/nF-ES6OEyyKZDJvRdLK8oA/dff96186-fdb4-4d1c-094a-4b63eaa7f100/public)
+
 ### Quick and dirty example
 
 1. Head over to [userpics.devclad.com](https://userpics.devclad.com) and "Get a random user pic".
