@@ -54,3 +54,8 @@ dist-ssr
 /public/build
 /api/index.js
 /api/index.js.map
+
+/app/styles/tailwind.css
+/api/_assets
+/api/index.js
+/api/index.js.map

@@ -5,9 +5,9 @@
     "setup": "yarn vercel login && yarn vercel link",
     "start": "yarn vercel dev",
     "build": "yarn run build:css && remix build",
-    "build:css": "tailwindcss -m -i ./styles/app.css -o app/styles/app.css",
+    "build:css": "tailwindcss -m -i ./styles/tailwind.css -o app/styles/tailwind.css",
     "dev": "concurrently \"yarn run dev:css\" \"remix dev\"",
-    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css"
+    "dev:css": "tailwindcss -w -i ./styles/tailwind.css -o app/styles/tailwind.css"
   },
   "dependencies": {
     "vercel": "^28.4.2",
