@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../app/root.tsx"],
-  "sourcesContent": ["import type { MetaFunction } from \"@remix-run/node\";\nimport {\n  Links,\n  LiveReload,\n  Meta,\n  Outlet,\n  Scripts,\n  ScrollRestoration,\n} from \"@remix-run/react\";\n\nexport const meta: MetaFunction = () => ({\n  charset: \"utf-8\",\n  title: \"New Remix App\",\n  viewport: \"width=device-width,initial-scale=1\",\n});\n\nexport default function App() {\n  return (\n    <html lang=\"en\">\n      <head>\n        <Meta />\n        <Links />\n      </head>\n      <body>\n        <Outlet />\n        <ScrollRestoration />\n        <Scripts />\n        <LiveReload />\n      </body>\n    </html>\n  );\n}\n"],
-  "mappings": ";;;;;;;;;;;;;;AAAA;AAUO,IAAM,OAAqB,OAAO;AAAA,EACvC,SAAS;AAAA,EACT,OAAO;AAAA,EACP,UAAU;AACZ;AAEe,SAAR,MAAuB;AAC5B,SACE,mDAAC;AAAA,IAAK,MAAK;AAAA,IACT;AAAA,yDAAC;AAAA,QACC;AAAA,6DAAC,UAAD;AAAA;AAAA;AAAA;AAAA,iBAAM;AAAA,UACN,mDAAC,WAAD;AAAA;AAAA;AAAA;AAAA,iBAAO;AAAA;AAAA,SAFT;AAAA;AAAA;AAAA;AAAA,aAGA;AAAA,MACA,mDAAC;AAAA,QACC;AAAA,6DAAC,YAAD;AAAA;AAAA;AAAA;AAAA,iBAAQ;AAAA,UACR,mDAAC,uBAAD;AAAA;AAAA;AAAA;AAAA,iBAAmB;AAAA,UACnB,mDAAC,aAAD;AAAA;AAAA;AAAA;AAAA,iBAAS;AAAA,UACT,mDAAC,gBAAD;AAAA;AAAA;AAAA;AAAA,iBAAY;AAAA;AAAA,SAJd;AAAA;AAAA;AAAA;AAAA,aAKA;AAAA;AAAA,KAVF;AAAA;AAAA;AAAA;AAAA,SAWA;AAEJ;",
-  "names": []
-}
