@@ -10,12 +10,21 @@ import {
 } from "@remix-run/react";
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }]
+  return [
+  { rel: "stylesheet",
+    href: styles
+  },
+  {
+    rel: "icon",
+    href: "/favicon.ico",
+    type: "image/ico",
+  },
+]
 }
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "Userpics by DevClad - Avatars in 1 API Call",
   viewport: "width=device-width,initial-scale=1",
 });
 
