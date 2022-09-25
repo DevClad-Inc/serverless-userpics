@@ -10,7 +10,6 @@
     "dev:css": "tailwindcss -w -i ./styles/tailwind.css -o app/styles/tailwind.css"
   },
   "dependencies": {
-    "vercel": "^28.4.2",
     "@heroicons/react": "^2.0.11",
     "@remix-run/node": "^1.7.2",
     "@remix-run/react": "^1.7.2",
