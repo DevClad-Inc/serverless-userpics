@@ -5,7 +5,7 @@
 ## Features
 
 - [x] 🚀 Generate avatars on the fly
-- [X] 🎨 100 avatars included from [Craftworks.design](https://craftworks.design/) (I'm not affiliated with them, just a fan)
+- [X] 🎨 100 avatars included from [Craftwork.design](https://craftwork.design/) (I'm not affiliated with them, just a fan)
 - [X] 🎨 Abstraction over [Boring Avatars](https://boringavatars.com/) included as well.
 - [x] ✨ Tiny as fuck.
 - [x] ✨ Serverless. Configurable. Easily deployable.
