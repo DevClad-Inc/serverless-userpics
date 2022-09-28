@@ -30,7 +30,7 @@ export default function Index() {
         Please check out the
         <a
         className="text-amber-300 text-xl m-2 uppercase font-extrabold"
-        href="https://github.com/arthtyagi/serverless-userpics/blob/main/README.md"
+        href="https://github.com/devclad-inc/serverless-userpics/blob/main/README.md"
         >
           readme
         </a>
@@ -41,12 +41,12 @@ export default function Index() {
   <div className="justify-center flex">
   <span className="block">
       <a
-          href="https://www.arthtyagi.xyz/"
+          href="https://devclad.com/"
           rel="noopener noreferrer"
           target="_blank"
           className="text-blue-300"
         >
-          Created by @arthtyagi
+          Open-sourced by DevClad
         </a>
   </span>
     </div>
