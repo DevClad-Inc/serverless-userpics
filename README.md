@@ -2,6 +2,8 @@
 
 **Fetch avatars for your next service in a single API call.**
 
+Development has moved to the [DevClad Mono[turbo]repo](https://github.com/DevClad-Inc/devclad/tree/main/apps/userpics)
+
 ## Features
 
 - [x] 🚀 Generate avatars on the fly
